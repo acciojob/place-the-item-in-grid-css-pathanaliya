@@ -1,2 +1,25 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: grid;                            /* Enable CSS Grid */
+  width: 200px;                             /* Total grid width */
+  height: 200px;                            /* Total grid height */
+  grid-template-columns: repeat(2, 1fr);    /* 2 equal columns */
+  grid-template-rows: repeat(2, 1fr);       /* 2 equal rows */
+  gap: 0;                                   /* No space between grid items */
+  border: 2px solid black;                  /* Optional: for visibility */
+}
+
+.item {
+  display: flex;                            /* Center content */
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+/* Optional: Different background colors for visibility */
+.item-1 { background: red; }
+.item-2 { background: blue; }
+.item-3 { background: green; }
+.item-4 { background: orange; }
